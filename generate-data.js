@@ -50,6 +50,13 @@ function naturalSort(a, b) {
   return a.localeCompare(b, undefined, { numeric: true, sensitivity: "base" });
 }
 
+// macOS (APFS/HFS+) hands back decomposed (NFD) unicode from readdir, but git
+// (core.precomposeunicode) stores precomposed (NFC) paths — normalize here so
+// the URLs in data.json actually match the filenames served by GitHub Pages.
+function nfc(str) {
+  return str.normalize("NFC");
+}
+
 const years = fs
   .readdirSync(ASSETS_DIR, { withFileTypes: true })
   .filter((d) => d.isDirectory() && /^\d{4}$/.test(d.name))
@@ -88,7 +95,7 @@ for (const year of years) {
     const gallery = files
       .filter((f) => f !== vignetteFile)
       .map((f) => ({
-        src: `assets/${year}/${project}/${f}`,
+        src: `assets/${nfc(year)}/${nfc(project)}/${nfc(f)}`,
         type: mediaType(f),
       }));
 
@@ -99,7 +106,7 @@ for (const year of years) {
       title,
       category,
       year,
-      vignette: `assets/${year}/${project}/${vignetteFile}`,
+      vignette: `assets/${nfc(year)}/${nfc(project)}/${nfc(vignetteFile)}`,
       vignetteType: mediaType(vignetteFile),
       description: readDescription(projectDir),
       gallery,
