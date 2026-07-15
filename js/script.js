@@ -1,7 +1,7 @@
 (function () {
   const yearsContainer = document.getElementById("years");
 
-  fetch("assets/data.json")
+  fetch("assets/data.json", { cache: "no-store" })
     .then((r) => r.json())
     .then(render)
     .catch((err) => {
