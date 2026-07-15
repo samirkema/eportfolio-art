@@ -1,0 +1,255 @@
+:root {
+  --bg: #f7f5f1;
+  --ink: #1c1b19;
+  --ink-soft: #6b6660;
+  --line: #ddd8d0;
+  --serif: 'Cormorant Garamond', serif;
+  --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+}
+
+.site-header {
+  text-align: center;
+  padding: 6rem 1.5rem 3rem;
+}
+
+.site-title {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.site-subtitle {
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0.75rem 0 0;
+}
+
+#years {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+
+.year-section {
+  margin-bottom: 5rem;
+}
+
+.year-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.year-heading h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.year-heading .rule {
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 2rem 1.75rem;
+}
+
+.project-card {
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  text-align: left;
+  font-family: inherit;
+  color: inherit;
+}
+
+.project-thumb {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: #eae6de;
+}
+
+.project-thumb img,
+.project-thumb video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.project-card:hover .project-thumb img,
+.project-card:hover .project-thumb video {
+  transform: scale(1.04);
+}
+
+.project-thumb.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+}
+
+.project-thumb.placeholder span {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--ink-soft);
+  font-size: 1.1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.project-caption {
+  margin-top: 0.9rem;
+}
+
+.project-caption h3 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.project-caption p {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0.3rem 0 0;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 2rem 1rem 3rem;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(24, 22, 20, 0.96);
+  display: none;
+  z-index: 100;
+}
+
+.lightbox.open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 92vw;
+  max-height: 92vh;
+  width: 100%;
+  gap: 1.25rem;
+}
+
+.lightbox-image-wrap {
+  max-height: 68vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-image-wrap img,
+.lightbox-image-wrap video {
+  max-width: 90vw;
+  max-height: 68vh;
+  object-fit: contain;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.lightbox-info {
+  color: #f2efe9;
+  text-align: center;
+  max-width: 600px;
+  padding: 0 1rem;
+}
+
+.lightbox-info h2 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin: 0 0 0.25rem;
+}
+
+.lightbox-meta {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #b8b2a8;
+  margin: 0 0 0.75rem;
+}
+
+.lightbox-info p:last-child {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #ddd7cd;
+}
+
+.lightbox-close,
+.lightbox-nav {
+  position: absolute;
+  background: none;
+  border: none;
+  color: #f2efe9;
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 1;
+  padding: 0.5rem;
+}
+
+.lightbox-close {
+  top: 1.25rem;
+  right: 1.5rem;
+  font-size: 2.2rem;
+}
+
+.lightbox-nav {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+}
+
+.lightbox-prev { left: 0.5rem; }
+.lightbox-next { right: 0.5rem; }
+
+.lightbox-nav:hover,
+.lightbox-close:hover {
+  color: #fff;
+}
+
+@media (max-width: 640px) {
+  .site-header { padding: 4rem 1rem 2.5rem; }
+  .year-heading h2 { font-size: 2rem; }
+  .lightbox-nav { font-size: 2.2rem; }
+}

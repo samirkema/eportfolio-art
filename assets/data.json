@@ -1,0 +1,201 @@
+[
+  {
+    "year": "2026",
+    "projects": [
+      {
+        "slug": "maxcraft",
+        "title": "Maxcraft",
+        "category": "Montage photo",
+        "year": "2026",
+        "vignette": "assets/2026/maxcraft/vignette.jpg",
+        "vignetteType": "image",
+        "description": "",
+        "gallery": []
+      }
+    ]
+  },
+  {
+    "year": "2025",
+    "projects": [
+      {
+        "slug": "piece de theatre ou jai jouée",
+        "title": "Piece de theatre ou jai jouée",
+        "category": "Théâtre",
+        "year": "2025",
+        "vignette": "assets/2025/piece de theatre ou jai jouée/WhatsApp Image 2026-07-15 at 16.59.10.jpeg",
+        "vignetteType": "image",
+        "description": "",
+        "gallery": [
+          {
+            "src": "assets/2025/piece de theatre ou jai jouée/WhatsApp Video 2026-07-15 at 16.56.06.mp4",
+            "type": "video"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "year": "2022",
+    "projects": [
+      {
+        "slug": "bordeaux",
+        "title": "Bordeaux",
+        "category": "Montage photo",
+        "year": "2022",
+        "vignette": "assets/2022/bordeaux/vignette.jpg",
+        "vignetteType": "image",
+        "description": "",
+        "gallery": []
+      },
+      {
+        "slug": "pekin",
+        "title": "Pekin",
+        "category": "Montage photo",
+        "year": "2022",
+        "vignette": "assets/2022/pekin/vignette.jpg",
+        "vignetteType": "image",
+        "description": "",
+        "gallery": []
+      }
+    ]
+  },
+  {
+    "year": "2021",
+    "projects": [
+      {
+        "slug": "photomontage-bigmom",
+        "title": "Bigmom",
+        "category": "Photomontage manga",
+        "year": "2021",
+        "vignette": "assets/2021/photomontage-bigmom/vignette.jpg",
+        "vignetteType": "image",
+        "description": "",
+        "gallery": [
+          {
+            "src": "assets/2021/photomontage-bigmom/detail-1.jpg",
+            "type": "image"
+          },
+          {
+            "src": "assets/2021/photomontage-bigmom/detail-2.jpg",
+            "type": "image"
+          },
+          {
+            "src": "assets/2021/photomontage-bigmom/detail-3.jpg",
+            "type": "image"
+          }
+        ]
+      },
+      {
+        "slug": "photomontage-doflamingo",
+        "title": "Doflamingo",
+        "category": "Photomontage manga",
+        "year": "2021",
+        "vignette": "assets/2021/photomontage-doflamingo/vignette.jpg",
+        "vignetteType": "image",
+        "description": "",
+        "gallery": []
+      },
+      {
+        "slug": "photomontage-itachi",
+        "title": "Itachi",
+        "category": "Photomontage manga",
+        "year": "2021",
+        "vignette": "assets/2021/photomontage-itachi/vignette.jpg",
+        "vignetteType": "image",
+        "description": "",
+        "gallery": []
+      },
+      {
+        "slug": "photomontage-mikey",
+        "title": "Mikey",
+        "category": "Photomontage manga",
+        "year": "2021",
+        "vignette": "assets/2021/photomontage-mikey/vignette.jpg",
+        "vignetteType": "image",
+        "description": "",
+        "gallery": []
+      },
+      {
+        "slug": "photomontage-naruto",
+        "title": "Naruto",
+        "category": "Photomontage manga",
+        "year": "2021",
+        "vignette": "assets/2021/photomontage-naruto/vignette.jpg",
+        "vignetteType": "image",
+        "description": "",
+        "gallery": []
+      },
+      {
+        "slug": "photomontage-obito",
+        "title": "Obito",
+        "category": "Photomontage manga",
+        "year": "2021",
+        "vignette": "assets/2021/photomontage-obito/vignette.jpg",
+        "vignetteType": "image",
+        "description": "",
+        "gallery": [
+          {
+            "src": "assets/2021/photomontage-obito/detail-1.jpg",
+            "type": "image"
+          },
+          {
+            "src": "assets/2021/photomontage-obito/detail-2.jpg",
+            "type": "image"
+          }
+        ]
+      },
+      {
+        "slug": "photomontage-sanji",
+        "title": "Sanji",
+        "category": "Photomontage manga",
+        "year": "2021",
+        "vignette": "assets/2021/photomontage-sanji/vignette.jpg",
+        "vignetteType": "image",
+        "description": "",
+        "gallery": []
+      },
+      {
+        "slug": "tissu-luffy",
+        "title": "Luffy",
+        "category": "Tableau tissu",
+        "year": "2021",
+        "vignette": "assets/2021/tissu-luffy/cover.jpg",
+        "vignetteType": "image",
+        "description": "",
+        "gallery": [
+          {
+            "src": "assets/2021/tissu-luffy/detail-2.jpg",
+            "type": "image"
+          },
+          {
+            "src": "assets/2021/tissu-luffy/detail-3.jpg",
+            "type": "image"
+          },
+          {
+            "src": "assets/2021/tissu-luffy/detail-4.jpg",
+            "type": "image"
+          },
+          {
+            "src": "assets/2021/tissu-luffy/detail-5.jpg",
+            "type": "image"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "year": "2020",
+    "projects": [
+      {
+        "slug": "piece theatre que j'ai écrite",
+        "title": "Piece theatre que j'ai écrite",
+        "category": "Théâtre",
+        "year": "2020",
+        "vignette": "assets/2020/piece theatre que j'ai écrite/Capture d’écran 2026-07-15 à 22.49.20.png",
+        "vignetteType": "image",
+        "description": "",
+        "gallery": []
+      }
+    ]
+  }
+]

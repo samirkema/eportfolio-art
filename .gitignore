@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+
+# Raw source photos / drops kept locally only — the site only ever reads
+# from assets/<year>/<project>/, never from files sitting at repo root.
+/*.png
+/*.jpg
+/*.jpeg
+/*.JPG
+/*.mp4
+/*.pages
