@@ -5,7 +5,7 @@
     .then((r) => r.json())
     .then(render)
     .catch((err) => {
-      yearsContainer.innerHTML = `<p style="text-align:center;color:#a33;">Impossible de charger le contenu (${err.message}).</p>`;
+      yearsContainer.innerHTML = `<p style="text-align:center;color:#a33;">Could not load the content (${err.message}).</p>`;
     });
 
   function render(years) {
@@ -89,8 +89,8 @@
     currentIndex = 0;
     lightboxTitle.textContent = project.title;
     lightboxMeta.textContent = `${project.category} — ${project.year}`;
-    lightboxDescription.textContent =
-      project.description || "Description à venir.";
+    lightboxDescription.textContent = project.description || "";
+    lightboxDescription.style.display = project.description ? "" : "none";
     updateMedia();
     lightbox.classList.add("open");
     lightbox.setAttribute("aria-hidden", "false");
