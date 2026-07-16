@@ -17,6 +17,23 @@ html, body {
   font-family: var(--sans);
 }
 
+a.site-banner,
+a.site-banner:visited {
+  display: block;
+  text-align: center;
+  background: var(--ink);
+  color: var(--bg);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+}
+
+a.site-banner:hover {
+  text-decoration: underline;
+}
+
 .site-header {
   text-align: center;
   padding: 6rem 1.5rem 3rem;
